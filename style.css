@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.start-menu{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ gap: 10px;
+ margin-top: 240px;
+ width: 150px;
+ 
+}
+
+.start-menu button{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.start-menu button:hover{
+    
+}
+
+.start-button{
+    background: #00ff00;
+}
+
+.guide-button{
+   background: #ffbf0f;
+}
+
+.quite-button{
+    background: #ff0000;
+}
