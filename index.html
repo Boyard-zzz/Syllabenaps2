@@ -3,41 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SyllabeSnap</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="start-menu">
-    <button class="start-button">Start Game</button>
-    <button class="guide-button">Guide</button>
-    <button class="quite-button">Quite</button>
-  </div>
-  <div class="game-container">
-   <div class="side"> 
-    <div class="left-side">
-      <div class="card" id="card" draggable="true"></div>
-      <div class="card" id="card" draggable="true"></div>
-      <div class="card" id="card" draggable="true"></div>
-      <div class="card" id="card" draggable="true"></div>
+    <div class="container">
+        <div class="info">
+            <button class="start-button">Start</button>
+            <div class="moves">Moves: <span id="moveCount">0</span></div>
+            <div class="level">Level: <span id="levelNum">1</span></div>
+        </div>
+        
+        <div class="question-box">
+            <h3 id="question">What fruit is this?</h3>
+        </div>
+        
+        <div class="game-row">
+            <div class="cards-column">
+                <h4>Drag these letters</h4>
+                <div class="card_container">
+                    <div class="card" draggable="true"></div>
+                    <div class="card" draggable="true"></div>
+                    <div class="card" draggable="true"></div>
+                    <div class="card" draggable="true"></div>
+                </div>
+            </div>
+            
+            <div class="outputs-column">
+                <h4>Drop here in order</h4>
+                <div class="outputs_container">
+                    <div class="output"></div>
+                    <div class="output"></div>
+                    <div class="output"></div>
+                    <div class="output"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button class="again-button">Again</button>
+            <button class="next-button">Next</button>
+        </div>
     </div>
-
-    <div class="right-side">
-      <div class="output"></div>
-      <div class="output"></div>
-      <div class="output"></div>
-      <div class="output"></div>
-    </div>
-   </div>
-   
-    <div class="under-menu">
-      <button class="again-button">Opnieuw proberen</button>
-      <button class="next-button">Volgende</button>
-    </div>
-  </div>
- </div>
     
-
-
- <script src="code.js"></script>   
+    <script src="code.js"></script>
 </body>
 </html>

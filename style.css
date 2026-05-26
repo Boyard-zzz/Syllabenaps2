@@ -5,98 +5,90 @@
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
-    background: #aea0a079;
-}
-
-.start-menu {
-    display: none;
-    align-items: center;
+    display: flex;
     justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    width: 150px;
+    align-items: center;
+    padding: 20px;
 }
 
-.start-menu button {
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 900px;
     width: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+.info button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
-.start-button {
-    background: #00ff00;
-}
-
-.guide-button {
-    background: #ffbf0f;
-}
-
-.quite-button {
-    background: #ff0000;
-}
-
-.game-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 70vw;
-    min-height: 450px;
+.question-box {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #f0f0ff;
     border-radius: 10px;
-    background: #ffffff;
-    padding: 20px;
 }
 
-.side {
-    width: 100%;
+.game-row {
     display: flex;
+    gap: 40px;
     justify-content: center;
-    gap: 50px;
-    margin-top: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
-.left-side {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 15px;
-    width: 45%;
-    min-height: 300px;
-    border: 2px solid #333;
-    border-radius: 20px;
-    padding: 20px;
+.cards-column, .outputs-column {
+    flex: 1;
+    text-align: center;
 }
 
-.right-side {
+.cards-column h4, .outputs-column h4 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card_container, .outputs_container {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     flex-direction: column;
     gap: 15px;
-    width: 45%;
-    min-height: 300px;
-    border: 2px solid #333;
-    border-radius: 20px;
+}
+
+.card, .output {
+    background: white;
+    border: 3px solid #667eea;
+    border-radius: 12px;
     padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
-    width: 100%;
-    padding: 15px;
-    min-height: 60px;
-    border-radius: 15px;
-    border: 2px dotted #333;
-    background: #00ff00;
+    background: #f0f0ff;
     cursor: grab;
-    text-align: center;
 }
 
 .card:active {
@@ -104,45 +96,33 @@ body {
 }
 
 .output {
-    width: 100%;
-    padding: 15px;
-    min-height: 60px;
-    border-radius: 15px;
-    border: 2px dotted #333;
-    background: #f5f5f5;
-    text-align: center;
+    background: #fafafa;
+    border-style: dashed;
 }
 
-/* Cards inside output become droppable area style */
-.output .card {
-    width: 100%;
-    margin: 0;
-    background: #90ee90;
-    cursor: default;
+.output.filled {
+    background: #e0ffe0;
+    border-style: solid;
 }
 
-.under-menu {
+.buttons {
     display: flex;
+    gap: 20px;
     justify-content: center;
-    gap: 50px;
-    margin-top: 20px;
-    width: 100%;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
 }
 
-.again-button,
-.next-button {
-    padding: 10px 25px;
+.buttons button {
+    background: #667eea;
+    color: white;
     border: none;
-    border-radius: 20px;
+    padding: 10px 30px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
 }
 
-.again-button {
-    background: #ff0000;
-    color: white;
-}
-
-.next-button {
-    background: #00ff00;
+.buttons button:hover {
+    background: #5a67d8;
 }
