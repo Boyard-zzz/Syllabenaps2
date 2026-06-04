@@ -1,1 +1,1 @@
-dit speel genaamd Syllabenaps
+SylabeSnap is een leuke en leerzame woordpuzzelgame waarin je je taalgevoel op de proef stelt! Aan de linkerkant van het scherm verschijnen losse lettergrepen. Jouw uitdaging is om deze naar de rechterkant te slepen en in de juiste volgorde te plaatsen. Combineer de lettergrepen correct en ontdek welk woord ze vormen. Hoe sneller en nauwkeuriger je de woorden raadt, hoe beter je score. SylabeSnap is perfect voor iedereen die van taalspelletjes, puzzels en uitdagende woordraadsels houdt! 🎯🧩📚
